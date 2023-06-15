@@ -229,4 +229,16 @@ body {
     height: 1rem;
     margin-top: -42rem;
   }
+  .content {
+    display: none;
+    position: absolute;
+    width: 20rem;
+    height: 40rem;
+    background-color: antiquewhite;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    overflow: scroll;
+  }
 }
