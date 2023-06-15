@@ -129,7 +129,7 @@ body {
     height: 40rem;
     background-color: antiquewhite;
     top: 0;
-    bottom: 20rem;
+    bottom: 2rem;
     right: 0;
     left: 2rem;
     margin: auto;
@@ -139,19 +139,23 @@ body {
     height: 50rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    gap: 2px;
     width: 10rem;
     margin-left: 20rem;
     margin-bottom: 10rem;
   }
   .list-item {
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     border: 1px solid black;
     width: 20rem;
-    height: 4rem;
+    height: 3rem;
     padding: 1rem;
     background-color: blue;
     border-radius: 20px;
+  }
+  .container {
+    height: 10rem;
+    margin-top: -42rem;
   }
 }
