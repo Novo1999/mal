@@ -142,6 +142,16 @@ body {
     gap: 2rem;
     width: 10rem;
     margin-left: 20rem;
-    margin-bottom: 34rem;
+    margin-bottom: 10rem;
+  }
+  .list-item {
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 20rem;
+    height: 4rem;
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 20px;
   }
 }
