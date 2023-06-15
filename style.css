@@ -102,3 +102,46 @@ body {
     overflow: scroll;
   }
 }
+@media screen and (max-height: 800px) {
+  .content {
+    display: none;
+    position: absolute;
+    width: 30rem;
+    height: 40rem;
+    background-color: antiquewhite;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 25rem;
+    margin: auto;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .heading {
+    display: none;
+  }
+  .content {
+    display: none;
+    position: absolute;
+    width: 25rem;
+    height: 40rem;
+    background-color: antiquewhite;
+    top: 0;
+    bottom: 20rem;
+    right: 0;
+    left: 2rem;
+    margin: auto;
+    overflow: scroll;
+  }
+  .flex {
+    height: 50rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 10rem;
+    margin-left: 20rem;
+    margin-bottom: 34rem;
+  }
+}
