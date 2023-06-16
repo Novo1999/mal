@@ -464,7 +464,7 @@ const malCodes = {
           `,
 };
 const algoCodes = {
-  binary: `-------------Binary Search--------------
+  Binary: `-------------Binary Search--------------
   #include <iostream>
   using namespace std;
   
@@ -1389,10 +1389,12 @@ const flex = document.querySelector(".flex");
 const flex2 = document.querySelector(".flex-2");
 
 change.addEventListener("click", () => {
+  heading.innerHTML = "Algorithm Codes";
   flex.classList.add("content-change");
   flex2.classList.remove("content-change");
 });
 change2.addEventListener("click", () => {
+  heading.innerHTML = "Microprocessor Codes";
   flex2.classList.add("content-change");
   flex.classList.remove("content-change");
 });
@@ -1413,7 +1415,7 @@ list.forEach((item) =>
     target("reverse", e);
     target("macro", e);
     // Algo
-    target2("binary", e);
+    target2("Binary", e);
     target2("maxmin", e);
     target2("measureBubbleQuick", e);
     target2("fractionalKnapsack", e);

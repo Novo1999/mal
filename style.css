@@ -94,7 +94,8 @@ body {
   cursor: pointer;
 }
 
-.changeBtn:hover {
+.changeBtn:hover,
+.changeBtn2:hover {
   color: white;
   background-color: red;
   transition: all 0.3s linear;
@@ -273,6 +274,16 @@ body {
   .changeBtn {
     top: 1rem;
     left: 70rem;
+  }
+  .changeBtn2 {
+    top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .changeBtn {
+    top: 1rem;
+    left: 67rem;
   }
   .changeBtn2 {
     top: 1rem;
