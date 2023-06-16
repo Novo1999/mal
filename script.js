@@ -32,7 +32,7 @@ list.forEach((item) =>
     target("upper", e);
     target("add", e);
     target("smaller", e);
-    tawhrget("largest", e);
+    target("largest", e);
     target("average", e);
     target("factorial", e);
     target("ascend", e);
