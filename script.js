@@ -27,7 +27,7 @@ list.forEach((item) =>
   item.addEventListener("click", (e) => {
     content.style.display = "block";
     target("odd", e);
-    target("y", e);
+    target("why", e);
     target("lower", e);
     target("upper", e);
     target("add", e);
