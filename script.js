@@ -27,12 +27,12 @@ list.forEach((item) =>
   item.addEventListener("click", (e) => {
     content.style.display = "block";
     target("odd", e);
-    target("why", e);
+    target("y", e);
     target("lower", e);
     target("upper", e);
     target("add", e);
     target("smaller", e);
-    target("largest", e);
+    tawhrget("largest", e);
     target("average", e);
     target("factorial", e);
     target("ascend", e);
