@@ -462,4 +462,62 @@ export const malCodes = {
             main endp
             end main
             `,
+  lowerUpper: `.model small
+            .stack 100h
+            .data
+                msg1 db "Enter an Input: $"
+                msg2 db 0dh,0ah, "The Output is: $"
+            .code
+            main proc
+                mov ax,@data
+                mov ds,ax
+                
+                lea dx,msg1
+                mov ah,09h
+                int 21h
+                
+                mov ah,01h
+                int 21h
+                mov bl,al
+                
+                cmp bl,'A'
+                jge L1  
+                
+                cmp bl,'a'
+                jge L2
+                
+                L1:
+                  cmp bl,'Z'
+                  jle L3
+                
+                L2:
+                  cmp bl,'z'
+                  jle L4
+                
+                L3:
+                  add bl,20h
+                  lea dx,msg2
+                  mov ah,09h
+                  int 21h
+                  
+                  mov dl,bl
+                  mov ah,02h
+                  int 21h
+                  jmp L5
+                  
+                L4:
+                  sub bl,20h
+                  lea dx,msg2
+                  mov ah,09h
+                  int 21h
+                  
+                  mov dl,bl
+                  mov ah,02h
+                  int 21h
+                
+                L5:
+                  mov ah,4ch
+                  int 21h
+                  main endp
+            end main`,
 };

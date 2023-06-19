@@ -38,6 +38,7 @@ list.forEach((item) =>
     target("ascend", e);
     target("reverse", e);
     target("macro", e);
+    target("lowerUpper", e);
     // Algo
     target2("Binary", e);
     target2("maxmin", e);
